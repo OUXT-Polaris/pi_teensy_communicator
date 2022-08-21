@@ -11,3 +11,5 @@ jobs:
       - uses: arduino/setup-arduino-cli@v1
         with:
           version: "0.26.0"
+      - name: install teensy core
+        run: arduino-cli core install teensy:avr
