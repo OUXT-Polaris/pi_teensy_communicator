@@ -8,4 +8,6 @@ jobs:
     runs-on: ubuntu-20.04
     steps:
       - uses: actions/checkout@v2
-      - uses: Arduino-CI/action@stable-1.x
+      - uses: arduino/setup-arduino-cli@v1
+        with:
+          version: "1.8.5"
